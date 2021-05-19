@@ -3,8 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SampleApp.MainPage">
 
-    <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+   <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+      <!--<Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
             <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
         </Frame>
         <Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>
@@ -18,7 +18,12 @@
                     </FormattedString.Spans>
                 </FormattedString>
             </Label.FormattedText>
-        </Label>
-    </StackLayout>
+        </Label>-->
+      <Label x:Name="firstLabel"
+             HorizontalTextAlignment="Center"
+             VerticalTextAlignment="Center"
+             TextColor="Black"
+             FontSize="16" />
+   </StackLayout>
 
 </ContentPage>

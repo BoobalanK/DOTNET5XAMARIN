@@ -14,6 +14,7 @@ namespace SampleApp
         public MainPage()
         {
             InitializeComponent();
+            firstLabel.Text = Common.Library.CommonClass.GetTheOutput();
         }
     }
 }

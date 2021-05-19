@@ -1,8 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net5.0</TargetFrameworks>
+    <TargetFrameworks>netstandard2.1</TargetFrameworks>
     <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
     <OutputType>Library</OutputType>
     <AutoGenerateBindingRedirects></AutoGenerateBindingRedirects>
   </PropertyGroup>
@@ -12,14 +13,25 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
 
-    <ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="MainPage.xaml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
     <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SampleApp.Library.NET5\SampleApp.Library.NET5.csproj" />
-    <ProjectReference Include="..\SampleApp.WorkerService.NET5\SampleApp.WorkerService.NET5.csproj" />
+    <ProjectReference Include="..\SampleApp.Common.Library\SampleApp.Common.Library.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
   </ItemGroup>
 
 </Project>
