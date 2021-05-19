@@ -11,8 +11,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleApp.iOS", "SampleApp.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleApp", "SampleApp\SampleApp.csproj", "{EA1AE414-8FF8-4F82-9267-B0CDD85E8BE8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleApp.WorkerService.NET5", "SampleApp.WorkerService.NET5\SampleApp.WorkerService.NET5.csproj", "{1245F36D-F8FD-4A62-BEAE-6D6B27B54796}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleApp.Library.NET5", "SampleApp.Library.NET5\SampleApp.Library.NET5.csproj", "{C7741371-3A4E-46F2-B385-3581BCF63CE7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleApp.Common.Library", "SampleApp.Common.Library\SampleApp.Common.Library.csproj", "{AAF9F9AA-6C14-4FEC-9C88-CA754BBE842C}"
